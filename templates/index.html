@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Agentic Sales/Support Console (Enterprise Starter)</title>
+  <link rel="stylesheet" href="/static/styles.css"/>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="title">Agentic Sales & Support Console (Enterprise Starter)</div>
+      <div class="subtitle">Paste the customer email, add attachments, stream status updates, and auto-create tickets.</div>
+    </div>
+
+    <div id="chat" class="chat">
+      <div class="bubble assistant">
+        👋 Welcome! Paste the customer’s email subject + body and upload any attachments.
+        I’ll classify it (Sales/Support), create a ticket, and suggest next actions.
+
+        Tip: You can later look up a ticket using /api/tickets/SR-xxxx or /api/tickets/SUP-xxxx.
+      </div>
+    </div>
+
+    <div class="composer">
+      <input id="subject" class="subject" placeholder="Email subject..." />
+      <textarea id="body" class="body" placeholder="Paste the full email body here..."></textarea>
+
+      <div class="row">
+        <input id="attachments" type="file" multiple />
+        <button id="sendBtn">Process Email</button>
+      </div>
+
+      <div id="status" class="status"></div>
+      <div id="progressWrap" class="progressWrap">
+        <div id="progressBar" class="progressBar"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

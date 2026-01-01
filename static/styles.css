@@ -1,0 +1,71 @@
+body { margin: 0; font-family: ui-sans-serif, system-ui, Arial; background: #0b1220; color: #e8eefc; }
+.app { max-width: 980px; margin: 0 auto; padding: 20px; }
+.header { margin-bottom: 12px; }
+.title { font-size: 20px; font-weight: 700; }
+.subtitle { opacity: 0.8; margin-top: 4px; }
+
+.chat {
+  height: 52vh;
+  overflow: auto;
+  background: #0f1a33;
+  border: 1px solid #1d2a4a;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.bubble {
+  max-width: 82%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin: 8px 0;
+  white-space: pre-wrap;
+  line-height: 1.35;
+}
+
+.assistant { background: #162447; border: 1px solid #22335c; }
+.user { background: #1a3a2d; border: 1px solid #2a5a45; margin-left: auto; }
+
+.composer {
+  margin-top: 12px;
+  background: #0f1a33;
+  border: 1px solid #1d2a4a;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.subject {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #22335c;
+  background: #0b1220;
+  color: #e8eefc;
+  margin-bottom: 10px;
+}
+
+.body {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #22335c;
+  background: #0b1220;
+  color: #e8eefc;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.row { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #2b3f6e;
+  background: #20345f;
+  color: #e8eefc;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.1); }
+
+.status { margin-top: 8px; opacity: 0.85; font-size: 13px; }
+.progressWrap { margin-top: 8px; height: 10px; background: #0b1220; border: 1px solid #22335c; border-radius: 999px; overflow: hidden; }
+.progressBar { height: 100%; width: 0%; background: #7aa2ff; transition: width 0.2s ease; }
